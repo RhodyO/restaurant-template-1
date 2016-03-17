@@ -1,21 +1,33 @@
+/*===================
+Template: Basic restaurant template
+File: index-style.scss
+Author: Yemi Olanbiwonnu
+Date: 16 Mar 16
+License: The MIT License (MIT) Copyright (c) <2016> <Yemi Olanbiwonnu>
+MIT License URL: https://opensource.org/licenses/MIT
+===================*/
 
 
-
-
-
-/*-----------------*/
+//-----------------\\
 // Website colors are stored here for reuse
-/*-----------------*/
-$header-bg-color-1: #FC3D39;
+//-----------------\\
+// Light red/crimson color (used in the navigation bar)
+$header-bg-color-light-crimson-1: #FC3D39;
+// Dark crimson color (used for the active link background in the navigation bar)
 $active-nav-bg-color: #641816;
+// Semi dark crimson color (used for the background when you hover over a navigation link)
+$hover-nav-bg-color: #972422;
+// The text color of the navigation bar link (currently white)
 $nav-bar-link-color: #fff;
+// The text color of the currentlyl selected navigation bar link (white)
 $nav-bar-selected-link-color: #fff;
-/*-----------------*/
-/*-----------------*/
+//-----------------\\
+//-----------------\\
 
 
 body {
 	background-color: #cdcdcd;
+	height: 1500px;
 }
 
 #sticky-nav-container {
@@ -24,11 +36,15 @@ body {
 
 #sticky-nav {
 	height:50px;
-	width: 100%;
+	//width: 100%;
 	color: $nav-bar-link-color;
 	border: 0px none;
-	background-color: $header-bg-color-1;
+	background-color: $header-bg-color-light-crimson-1;
 	border-radius: 0px;
+
+	> ul {
+		//width: 100%;
+	}
 }
 	
 .navbar-default .navbar-nav {
@@ -37,17 +53,28 @@ body {
 			background-color: $active-nav-bg-color;
 			color: $nav-bar-selected-link-color;
 		}
+		> a:hover {
+			color: $nav-bar-link-color;
+			background-color: $hover-nav-bg-color;
+		}
 	}
 
 	> li {
 		> a {
 			color: $nav-bar-link-color;
 		}
+		> a:hover {
+			color: $nav-bar-link-color;
+			background-color: $hover-nav-bg-color;
+		}
 	}
 }
 
+.navbar-right {
+	margin-right: 0px;
+}
+
 .active {
-	box-shadow: none;
 	a {
 		border-radius: 1px;
 		box-shadow: none;
