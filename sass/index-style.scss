@@ -1,0 +1,55 @@
+
+
+
+
+
+/*-----------------*/
+// Website colors are stored here for reuse
+/*-----------------*/
+$header-bg-color-1: #FC3D39;
+$active-nav-bg-color: #641816;
+$nav-bar-link-color: #fff;
+$nav-bar-selected-link-color: #fff;
+/*-----------------*/
+/*-----------------*/
+
+
+body {
+	background-color: #cdcdcd;
+}
+
+#sticky-nav-container {
+	height: 50px;
+}
+
+#sticky-nav {
+	height:50px;
+	width: 100%;
+	color: $nav-bar-link-color;
+	border: 0px none;
+	background-color: $header-bg-color-1;
+	border-radius: 0px;
+}
+	
+.navbar-default .navbar-nav {
+	> li.active {
+		> a {
+			background-color: $active-nav-bg-color;
+			color: $nav-bar-selected-link-color;
+		}
+	}
+
+	> li {
+		> a {
+			color: $nav-bar-link-color;
+		}
+	}
+}
+
+.active {
+	box-shadow: none;
+	a {
+		border-radius: 1px;
+		box-shadow: none;
+	}
+}

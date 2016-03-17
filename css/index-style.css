@@ -1,0 +1,31 @@
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+body {
+  background-color: #cdcdcd; }
+
+#sticky-nav-container {
+  height: 50px; }
+
+#sticky-nav {
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  border: 0px none;
+  background-color: #FC3D39;
+  border-radius: 0px; }
+
+.navbar-default .navbar-nav > li.active > a {
+  background-color: #641816;
+  color: #fff; }
+.navbar-default .navbar-nav > li > a {
+  color: #fff; }
+
+.active {
+  box-shadow: none; }
+  .active a {
+    border-radius: 1px;
+    box-shadow: none; }
+
+/*# sourceMappingURL=index-style.css.map */

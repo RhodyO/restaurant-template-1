@@ -14,7 +14,7 @@ MIT License URL: https://opensource.org/licenses/MIT
 	<!-- Include Bootstrap and main style sheet -->
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="css/index-style.css" />
 
 	<!-- Configure the website viewport based on the device size -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -23,9 +23,19 @@ MIT License URL: https://opensource.org/licenses/MIT
 
 	<!-- Header -->
 	<div class="header">
-		<div class="container">
-			<nav class="nav navbar">
-				
+		<div class="banner">
+			
+		</div>
+		<!-- There is a container around the sticky navbar with a fixed height so that the content of the page doesn't "jump up" when the navbar 		 sticks to the top of the page -->
+		<div id="sticky-nav-container">
+			<!-- This is a sticky nav bar. This can be disabled by not including header-nav.js -->
+			<nav id="sticky-nav" class="navbar navbar-default">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Home</a></li>
+					<li class="active"><a href="#">Menu</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
 			</nav>
 		</div>
 	</div>
