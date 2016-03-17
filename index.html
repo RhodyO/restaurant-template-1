@@ -12,9 +12,12 @@ MIT License URL: https://opensource.org/licenses/MIT
 	<meta http-equiv="Content-Type" content="text/html; utf-8" />
 	<title>Restaurantier</title>
 
-	<!-- Include Bootstrap and main style sheet -->
+	<!-- Include Bootstrap and font-awesome style sheet -->
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- Include header navigation style sheet -->
+	<link rel="stylesheet" href="css/header-nav-style.css" />
+	<!-- Include index page style sheet -->
 	<link rel="stylesheet" href="css/index-style.css" />
 
 	<!-- Configure the website viewport based on the device size -->
@@ -23,9 +26,17 @@ MIT License URL: https://opensource.org/licenses/MIT
 <body>
 
 	<!-- Header -->
-	<div class="header">
-		<div class="banner">
-			
+	<div>
+		<!-- This is the banner at the top of the page -->
+		<div class="relative-banner-element">
+			<div id="header-repeat-bg">
+				<div id="header-transparency"></div>
+			</div>
+			<!-- This is the Oval behind the logo -->
+			<div class="restaurant-logo-container">
+				<!-- This is the main logo at the top left of the site -->
+				<img class="img-responsive restaurant-logo" src="images/restaurant-logo.png" alt="Restaurant logo" />
+			</div>
 		</div>
 		<!-- There is a container around the sticky navbar with a fixed height so that the content of the page doesn't "jump up" when the navbar 		 sticks to the top of the page -->
 		<div id="sticky-nav-container">
@@ -46,8 +57,21 @@ MIT License URL: https://opensource.org/licenses/MIT
 	
 
 
+	<!-- Include the script for the sticky navigation -->
+	<!-- <script src="js/header-nav.js"></script> -->
 	<!-- Include JQuery and Bootstrap into the page -->
 	<script src="js/jquery-1.12.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

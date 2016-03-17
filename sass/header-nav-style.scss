@@ -1,0 +1,130 @@
+/*===================
+Template: Basic restaurant template
+File: header-nav-style.scss
+Author: Yemi Olanbiwonnu
+Date: 17 Mar 16
+License: The MIT License (MIT) Copyright (c) <2016> <Yemi Olanbiwonnu>
+MIT License URL: https://opensource.org/licenses/MIT
+===================*/
+
+
+//-----------------\\
+// Website colors are stored here for reuse
+//-----------------\\
+// Light red/crimson color (used in the navigation bar)
+$header-bg-color-light-crimson-1: #FC3D39;
+// Dark crimson color (used for the active link background in the navigation bar)
+$active-nav-bg-color: #320c0b;//#641816;
+// Semi dark crimson color (used for the background when you hover over a navigation link)
+$hover-nav-bg-color: #972422;
+// The text color of the navigation bar link (currently white)
+$nav-bar-link-color: #fff;
+// The text color of the currentlyl selected navigation bar link (white)
+$nav-bar-selected-link-color: #fff;
+//-----------------\\
+//-----------------\\
+
+#sticky-nav-container {
+	height: 50px;
+}
+
+#sticky-nav {
+	height:50px;
+	color: $nav-bar-link-color;
+	border: 0px none;
+	background-color: $header-bg-color-light-crimson-1;
+	border-radius: 0px;
+}
+	
+.navbar-default .navbar-nav {
+	> li.active {
+		> a {
+			background-color: $active-nav-bg-color;
+			color: $nav-bar-selected-link-color;
+		}
+		> a:hover {
+			color: $nav-bar-link-color;
+			background-color: $hover-nav-bg-color;
+		}
+	}
+
+	> li {
+		> a {
+			color: $nav-bar-link-color;
+		}
+		> a:hover {
+			color: $nav-bar-link-color;
+			background-color: $hover-nav-bg-color;
+		}
+	}
+}
+
+.navbar-nav {
+	margin-right: 0px;
+}
+
+.navbar-right {
+	margin-right: 0px;
+}
+
+.active {
+	a {
+		border-radius: 1px;
+		box-shadow: none;
+	}
+}
+
+.relative-banner-element {
+	position: relative;
+	width: 100%;
+	max-height: 120px;
+
+	> .restaurant-logo-container {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		width: 230px;
+		height: 80px;
+		border-radius: 45%;
+		background-color: rgba(0,0,0,0.65);
+
+		> .img-responsive.restaurant-logo {
+			position: relative;
+			max-width: 350px;
+			min-width: 0px;
+			min-height: 0px;
+			max-height: 250px;
+			margin: auto;
+			top: 11px;
+		}
+	}
+}
+
+#header-repeat-bg {
+	width: 100%;
+	height: 120px;
+	position: relative;
+	background-image: url('../images/header-bg-pattern-1.gif');
+	background-position: left top;
+	background-repeat: repeat;
+}
+
+#header-transparency {
+	width: 100%;
+	height: 120 px;
+	position: absolute;
+	background-color: rgba(220, 220, 220, 0.6);
+	background-position: left top;
+}
+
+
+
+
+
+
+
+
+
+
+
+

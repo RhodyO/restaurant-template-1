@@ -10,33 +10,4 @@ body {
   background-color: #cdcdcd;
   height: 1500px; }
 
-#sticky-nav-container {
-  height: 50px; }
-
-#sticky-nav {
-  height: 50px;
-  color: #fff;
-  border: 0px none;
-  background-color: #FC3D39;
-  border-radius: 0px; }
-
-.navbar-default .navbar-nav > li.active > a {
-  background-color: #641816;
-  color: #fff; }
-.navbar-default .navbar-nav > li.active > a:hover {
-  color: #fff;
-  background-color: #972422; }
-.navbar-default .navbar-nav > li > a {
-  color: #fff; }
-.navbar-default .navbar-nav > li > a:hover {
-  color: #fff;
-  background-color: #972422; }
-
-.navbar-right {
-  margin-right: 0px; }
-
-.active a {
-  border-radius: 1px;
-  box-shadow: none; }
-
 /*# sourceMappingURL=index-style.css.map */
