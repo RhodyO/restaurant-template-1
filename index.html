@@ -13,7 +13,7 @@ MIT License URL: https://opensource.org/licenses/MIT
 	<!-- Configure the website viewport based on the device size -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-	<title>Restaurantier</title>
+	<title>Restaurant</title>
 
 	<!-- Include Bootstrap and font-awesome style sheet -->
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -25,6 +25,11 @@ MIT License URL: https://opensource.org/licenses/MIT
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	
+	<!-- Include JQuery and Bootstrap into the page -->
+	<script src="js/jquery-1.12.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
     
 	<!-- Include header navigation style sheet -->
 	<link rel="stylesheet" href="css/header-nav-style.css" />
@@ -35,41 +40,57 @@ MIT License URL: https://opensource.org/licenses/MIT
 
 	<!-- Header -->
 	<div>
+		<!-- This is the navigation bar -->
+		<!-- Note: This is a sticky navigation bar. There is a container around the sticky navbar with a fixed height so that the content of the page doesn't "jump up" when the navbar sticks to the top of the page. The sticky/fixed navigation can be disabled by not including header-nav.js -->
+		<div id="sticky-nav-container">
+			<nav id="sticky-nav" class="navbar navbar-default">
+				<div class="navbar-header" id="navigationBrand">
+					<!-- This is the menu icon that is displayed when the page is in phone/tablet mode -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsingNavigation">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      	</button>
+			      	<!-- This is the website name/brand -->
+					<a class="navbar-brand" href="index.html">Restaurant</a>
+				</div>
+				<!-- These are where the navigation links go. The will be hidden when the page is in phone/tablet mode -->
+				<div class="collapse navbar-collapse" id="collapsingNavigation">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Menu</a></li>
+						<li><a href="#">Catering</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+					<!-- <ul class="nav navbar-nav navbar-right">
+					</ul> -->
+				</div>
+			</nav>
+		</div>
+
 		<!-- This is the banner at the top of the page -->
 		<div class="relative-banner-element">
 			<div id="header-repeat-bg">
 				<div id="header-banner-shadow"></div>
 			</div>
 			<!-- This is the Oval behind the logo -->
-			<div class="restaurant-logo-container">
-				<!-- This is the main logo at the top left of the site -->
-				<img class="img-responsive restaurant-logo" src="images/restaurant-logo.png" alt="Restaurant logo" />
-			</div>
-		</div>
-		<!-- There is a container around the sticky navbar with a fixed height so that the content of the page doesn't "jump up" when the navbar 		 sticks to the top of the page -->
-		<div id="sticky-nav-container">
-			<!-- This is a sticky nav bar. This can be disabled by not including header-nav.js -->
-			<nav id="sticky-nav" class="navbar navbar-default">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Menu</a></li>
-					<li><a href="#">Catering</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
-			</nav>
+			<a href="index.html">
+				<div class="restaurant-logo-container">
+					<!-- This is the main logo at the top left of the site -->
+					<img class="img-responsive restaurant-logo" src="images/restaurant-logo.png" alt="Restaurant logo" />
+				</div>
+			</a>
 		</div>
 	</div>
+
+
+	<div class="jumbotron" id="foodImage1">
+		<img src="images/food-dishes-table-banner.jpg" alt="Spaghetti meal image" class="img-responsive full-width-image" />
+	    <h1>Bootstrap Tutorial</h1>      
+	    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+  	</div>
 	
 
-
-	<!-- Include the script for the sticky navigation -->
-	<!-- <script src="js/header-nav.js"></script> -->
-	<!-- Include JQuery and Bootstrap into the page -->
-	<script src="js/jquery-1.12.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
 

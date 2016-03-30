@@ -10,4 +10,19 @@ body {
   background-color: #cdcdcd;
   height: 1500px; }
 
+#foodImage1 {
+  margin: 50px 25px 20px;
+  padding: 20px 30px; }
+  @media screen and (max-width: 767px) and (min-width: 480px) {
+    #foodImage1 {
+      margin: 20px 15px 10px;
+      padding: 20px 20px; } }
+  @media screen and (max-width: 479px) {
+    #foodImage1 {
+      margin: 0px 0px 0px;
+      padding: 20px 10px; } }
+
+.full-width-image {
+  width: 100%; }
+
 /*# sourceMappingURL=index-style.css.map */

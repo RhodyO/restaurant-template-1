@@ -9,6 +9,25 @@ MIT License URL: https://opensource.org/licenses/MIT
 
 
 //-----------------\\
+// Device width constraits
+//-----------------\\
+$smallPhoneWidthMax: 479px;
+
+$smallTabletWidthMin: 480px;
+$smallTabletWidthMax: 767px;
+
+$largeTabletWidthMin: 768px;
+$largeTabletWidthMax: 991px;
+
+$smallMonitorWidthMin: 992px;
+$smallMonitorWidthMax: 1199px;
+
+$largeMonitorWidthMin: 1200px;
+//-----------------\\
+//-----------------\\
+
+
+//-----------------\\
 // Website colors are stored here for reuse
 //-----------------\\
 // Main background color of the website (very light gray)
@@ -22,6 +41,23 @@ body {
 	height: 1500px;
 }
 
+#foodImage1 {
+	margin: 50px 25px 20px;
+	padding: 20px 30px;
+
+	@media screen and (max-width: $smallTabletWidthMax) and (min-width: $smallTabletWidthMin) {
+		margin: 20px 15px 10px;
+		padding: 20px 20px;
+	}
+	@media screen and (max-width: $smallPhoneWidthMax) {
+		margin: 0px 0px 0px;
+		padding: 20px 10px;
+	}
+}
+
+.full-width-image {
+	width: 100%;
+}
 
 
 

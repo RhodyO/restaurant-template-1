@@ -7,26 +7,65 @@ License: The MIT License (MIT) Copyright (c) <2016> <Yemi Olanbiwonnu>
 MIT License URL: https://opensource.org/licenses/MIT
 ===================*/
 #sticky-nav-container {
-  height: 50px; }
+  min-height: 50px;
+  width: 100%; }
 
 #sticky-nav {
-  height: 50px;
+  min-height: 50px;
+  z-index: 520;
+  position: fixed;
+  width: 100%;
   color: #fff;
   border: 0px none;
   background-color: #FC3D39;
   border-radius: 0px; }
 
+.navbar-default .navbar-nav > li > a {
+  color: #fff; }
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: #972422; }
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #FC3D39; }
+.navbar-default .navbar-nav > li > a:focus:hover {
+  color: #fff;
+  background-color: #972422; }
 .navbar-default .navbar-nav > li.active > a {
   background-color: #320c0b;
   color: #fff; }
 .navbar-default .navbar-nav > li.active > a:hover {
   color: #fff;
   background-color: #972422; }
-.navbar-default .navbar-nav > li > a {
-  color: #fff; }
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li.active > a:focus {
   color: #fff;
+  background-color: #320c0b; }
+
+.navbar-header a.navbar-brand {
+  color: #fff;
+  margin-right: 60px;
+  margin-left: 0px;
+  padding-left: 15px;
+  padding-right: 15px; }
+.navbar-header a.navbar-brand:hover {
+  color: #fff;
+  background-color: #FC3D39; }
+.navbar-header .navbar-toggle {
+  background-color: #FC3D39;
+  border: none; }
+  .navbar-header .navbar-toggle .icon-bar {
+    background-color: #fff; }
+.navbar-header .navbar-toggle:hover {
   background-color: #972422; }
+.navbar-header .navbar-toggle:focus {
+  background-color: #FC3D39; }
+.navbar-header .navbar-toggle:focus:hover {
+  background-color: #972422; }
+
+.navbar-collapse {
+  border-top: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
 
 .navbar-nav {
   margin-right: 0px; }
@@ -39,10 +78,11 @@ MIT License URL: https://opensource.org/licenses/MIT
   box-shadow: none; }
 
 .relative-banner-element {
+  display: block;
   position: relative;
   width: 100%;
   height: 120px; }
-  .relative-banner-element > .restaurant-logo-container {
+  .relative-banner-element .restaurant-logo-container {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -50,7 +90,7 @@ MIT License URL: https://opensource.org/licenses/MIT
     height: 80px;
     border-radius: 45%;
     background-color: rgba(0, 0, 0, 0.65); }
-    .relative-banner-element > .restaurant-logo-container > .img-responsive.restaurant-logo {
+    .relative-banner-element .restaurant-logo-container .img-responsive.restaurant-logo {
       position: relative;
       max-width: 350px;
       min-width: 0px;
